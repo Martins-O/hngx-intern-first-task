@@ -18,7 +18,7 @@ public class Endpoint {
 
 //    @RequestMapping(method = RequestMethod.GET, path = "/api")
     @GetMapping(produces = "application/json")
-    public ResponseEntity<Object> getInfo(@RequestParam String slackName, @RequestParam String track) {
+    public ResponseEntity<Object> getInfo(@RequestParam String slack_name, @RequestParam String track) {
         try {
             DayOfWeek currentDayOfWeek = LocalDateTime.now(ZoneId.of("UTC")).getDayOfWeek();
 //            String currentDay = currentDayOfWeek.getDisplayName(
@@ -34,7 +34,7 @@ public class Endpoint {
             String githubFileUrl = githubRepoUrl + "/blob/main/Endpoint.java";
 
             ApiResponse response = new ApiResponse(
-                    slackName,
+                    slack_name,
                     currentDay,
                     utcTime,
                     track,
