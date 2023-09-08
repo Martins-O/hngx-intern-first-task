@@ -30,7 +30,7 @@ public class Endpoint {
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss'Z'");
             String utcTime = LocalDateTime.now(ZoneId.of("UTC")).format(formatter);
 
-            String githubRepoUrl = "https://github.com/Martins-O/repo";
+            String githubRepoUrl = "https://github.com/Martins-O/hngx-intern-first-task";
             String githubFileUrl = githubRepoUrl + "/blob/main/Endpoint.java";
 
             ApiResponse response = new ApiResponse(
