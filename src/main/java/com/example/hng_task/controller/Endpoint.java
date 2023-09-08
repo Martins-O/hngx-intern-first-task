@@ -31,7 +31,7 @@ public class Endpoint {
             String utcTime = LocalDateTime.now(ZoneId.of("UTC")).format(formatter);
 
             String githubRepoUrl = "https://github.com/Martins-O/hngx-intern-first-task";
-            String githubFileUrl = githubRepoUrl + "/blob/main/Endpoint.java";
+            String githubFileUrl = "https://github.com/Martins-O/hngx-intern-first-task/blob/indev/src/main/java/com/example/hng_task/controller/Endpoint.java";
 
             ApiResponse response = new ApiResponse(
                     slack_name,
