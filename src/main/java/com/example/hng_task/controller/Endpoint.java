@@ -12,7 +12,7 @@ import java.time.format.TextStyle;
 import java.util.Locale;
 
 @RestController
-@RequestMapping("/api/")
+@RequestMapping("/api")
 public class Endpoint {
 
 
